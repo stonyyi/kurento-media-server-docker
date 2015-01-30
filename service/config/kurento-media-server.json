@@ -26,7 +26,7 @@
   "modules": {
     "kurento": {
       "SdpEndpoint" : {
-        "sdpPattern" : "sdp_pattern.txt"
+        "sdpPattern" : "/service/config/sdp_pattern.txt"
       },
       "HttpEndpoint" : {
         // "serverAddress" : "localhost",
@@ -41,7 +41,7 @@
       },
       "WebRtcEndpoint" : {
         "stunServerAddress" : "104.236.160.12", // rtc-sfo1.cine.io
-        "stunServerPort" : 3478,
+        "stunServerPort" : 3478
         // turnURL gives the necessary info to configure TURN for WebRTC.
         //    'address' must be an IP (not a domain).
         //    'transport' is optional (UDP by default).
