@@ -6,7 +6,7 @@ cine.io [Docker](https://docker.com/) container that runs the [kurento media ser
 # Usage
 
 ```bash
-$ docker run  -d --name kurento-media-server -h rtc-endpoint-dev  -p 8888:8888 -v "/Users/thomas/work/tmp:/var/rtc-recordings"   cine/kurento-media-server-docker
+$ docker run  -d --name kurento-media-server -p 8888:8888 -v "/Users/thomas/work/tmp:/var/rtc-recordings"   cine/kurento-media-server-docker
 ```
 
 # Notes
