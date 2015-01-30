@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# doesn't work
+# permissions broken
+# exec service kurento-media-server start --conf-file /service/config/kurento-media-server.json
+# I should probably do the erb template thing where it becomes dynamic
+
+# /sbin/start-stop-daemon --start --exec $DAEMON_CMD --pidfile "$PID_FILE" \
+# --chuid $DAEMON_USER --background --no-close --make-pidfile 1>>"$DAEMON_LOG/media-server.log" 2>&1
+kurento-media-server start 2>&1
+
+
+# tail -f /var/log/kurento-media-server/media-server.log
