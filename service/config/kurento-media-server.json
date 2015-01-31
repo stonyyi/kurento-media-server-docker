@@ -12,7 +12,7 @@
       }
       */
       "websocket": {
-        "port": 80,
+        "port": 8888, //SHOULD CHANGE TO USING ERB REPLACEMENT
         //"secure": {
         //  "port": 8433,
         //  "certificate": "defaultCertificate.pem",
@@ -45,7 +45,7 @@
         // turnURL gives the necessary info to configure TURN for WebRTC.
         //    'address' must be an IP (not a domain).
         //    'transport' is optional (UDP by default).
-        // "turnURL" : "user:password@address:port(?transport=[udp|tcp|tls])",
+        // "turnURL" : "user:password@address:port(?transport=[udp|tcp|tls])", //TODO: ADD TURN URL
         // "pemCertificate" : "file"
       },
       "PlumberEndpoint" : {
