@@ -1,4 +1,4 @@
-FROM kurento/media-server-64-dev:5.1.1-1.2015
+FROM kurento/media-server-64:5.1.0-trusty
 MAINTAINER Thomas Shafer <thomas@cine.io>
 
 # workaround for https://github.com/docker/docker/issues/6345
