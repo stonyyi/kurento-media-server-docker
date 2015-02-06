@@ -12,7 +12,7 @@
       }
       */
       "websocket": {
-        "port": 8888, //SHOULD CHANGE TO USING ERB REPLACEMENT
+        "port": 80,
         //"secure": {
         //  "port": 8433,
         //  "certificate": "defaultCertificate.pem",

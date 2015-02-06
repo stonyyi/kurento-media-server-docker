@@ -11,4 +11,4 @@ VOLUME ["/var/rtc-recordings"]
 
 CMD ["/bin/bash", "/service/bin/run"]
 
-EXPOSE 8888
+EXPOSE 80
