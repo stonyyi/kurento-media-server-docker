@@ -11,4 +11,7 @@ VOLUME ["/var/rtc-recordings"]
 
 CMD ["/bin/bash", "/service/bin/run"]
 
+# for websocket connection
 EXPOSE 80
+# This is the HttpGetEndpoint port
+EXPOSE 9091
