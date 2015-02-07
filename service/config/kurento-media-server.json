@@ -30,14 +30,18 @@
       },
       "HttpEndpoint" : {
         // "serverAddress" : "localhost",
-        "port" : 9091
+        "port" : 9091,
         /*
           Announced IP Addess may be helpful under situations such as the server needs
           to provide URLs to clients whose host name is different from the one the
           server is listening in. If this option is not provided, http server will try
           to look for any available address in your system.
+
+          Thomas' explanation: it's the host of the url a HttpEndpoint will give you
+          so when you say httpGet.getUrl(err, url) the url will be
+          http://announcedAddress:port/some-id
         */
-        // "announcedAddress" : "localhost"
+        "announcedAddress": "kurento-media-server"
       },
       "WebRtcEndpoint" : {
         "stunServerAddress" : "104.236.160.12", // rtc-sfo1.cine.io

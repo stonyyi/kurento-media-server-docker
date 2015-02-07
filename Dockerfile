@@ -7,8 +7,6 @@ RUN ln -s -f /bin/true /usr/bin/chfn
 # copy our service
 COPY service /service
 
-VOLUME ["/var/rtc-recordings"]
-
 CMD ["/bin/bash", "/service/bin/run"]
 
 # for websocket connection
