@@ -10,6 +10,6 @@ COPY service /service
 CMD ["/bin/bash", "/service/bin/run"]
 
 # for websocket connection
-EXPOSE 80
+EXPOSE 8888
 # This is the HttpGetEndpoint port
 EXPOSE 9091

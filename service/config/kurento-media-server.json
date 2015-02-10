@@ -12,7 +12,7 @@
       }
       */
       "websocket": {
-        "port": 80,
+        "port": 8888,
         //"secure": {
         //  "port": 8433,
         //  "certificate": "defaultCertificate.pem",
