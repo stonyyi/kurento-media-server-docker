@@ -45,12 +45,16 @@
       },
       "WebRtcEndpoint" : {
         "stunServerAddress" : "104.236.160.12", // rtc-sfo1.cine.io
-        "stunServerPort" : 3478,
+        "stunServerPort" : 3478
         // turnURL gives the necessary info to configure TURN for WebRTC.
         //    'address' must be an IP (not a domain).
         //    'transport' is optional (UDP by default).
+
+        // TODO: Turn support breaks everything, I cannot see streams in vlc
+        // through HttpEndpoint as they're happening
         // SET IN CINE REPO
-        "turnURL": "Kurento:Cwznt7Nt9haJRwfYMKXxZZM8DNctGnEytGCCXCcJkwpdZhXXnG@104.236.160.12:3478"
+        // "turnURL": "Kurento:Cwznt7Nt9haJRwfYMKXxZZM8DNctGnEytGCCXCcJkwpdZhXXnG@104.236.160.12:3478"
+
         // "turnURL" : "user:password@address:port(?transport=[udp|tcp|tls])",
         // "pemCertificate" : "file"
       },
