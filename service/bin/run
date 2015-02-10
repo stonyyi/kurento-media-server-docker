@@ -4,9 +4,13 @@
 # find our nearest stun/turn server (right now hardcoded to rtc-sfo1.cine.io)
 # add TURN authentication
 
-kurento-media-server start --conf-file /service/config/kurento-media-server.json 2>&1
+cp -f /service/config/kurento-media-server.json /etc/kurento/kurento.conf.json
+
+service kurento-media-server start
+
+# kurento-media-server start --conf-file  1>>/var/log/kurento-media-server/media-server.log 2>&1
 # NOTE: recommended start of kurento-media-server by using `service kurento-media-server start`
 #   doesn't work. It does not have permission to write to the file system.
 
 # This is where the verbose logs go:
-# tail -f /var/log/kurento-media-server/media-server.log
+tail -f /var/log/kurento-media-server/media-server.log
